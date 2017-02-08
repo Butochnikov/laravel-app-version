@@ -1,0 +1,22 @@
+{
+    "name": "butochnikov/laravel-app-version",
+    "description": "Display app version number",
+    "type": "laravel, version",
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "~5.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Butochnikov",
+            "email": "butochnikov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Butochnikov\\LaravelAppVersion\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
