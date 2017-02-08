@@ -1,5 +1,7 @@
 # Laravel app version
 
+Display application version number.
+
 ## Installation
 
 Require it in your Laravel project:

@@ -10,11 +10,12 @@ class ApplicationVersion extends Command
     protected $signature = 'app:ver 
                             {--F|full : With framework version}';
 
-    protected $description = 'Display a app version';
+    protected $description = 'Display application version';
 
     public function handle(AppVersionController $ver)
     {
         $options = $this->options();
+
         if ($options['full']) {
             $this->info($ver->getFullVersion());
         } else {
