@@ -1,7 +1,7 @@
 {
     "name": "butochnikov/laravel-app-version",
     "description": "Display app version number",
-    "type": "laravel, version",
+    "keywords": ["app", "version", "number" , "laravel"],
     "require": {
         "php": ">=5.6.4",
         "illuminate/support": "~5.1"
