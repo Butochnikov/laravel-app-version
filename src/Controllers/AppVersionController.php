@@ -26,7 +26,7 @@ class AppVersionController
     public function getVersion()
     {
         if ($this->getAppName() == 'Laravel') {
-            return $this->getAppName();
+            return app()->version();
         }
 
         if (file_exists(self::versionFile())) {
