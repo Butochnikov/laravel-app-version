@@ -49,7 +49,7 @@ class AppVersionController
     private function printVersion($full = false)
     {
         if ($full) {
-            return "{$this->getAppName()} {$this->ver} <comment>(Laraver ".app()->version().')</comment>';
+            return "{$this->getAppName()} {$this->ver} <comment>(Laravel ".app()->version().')</comment>';
         } else {
             return "{$this->getAppName()} {$this->ver}";
         }
