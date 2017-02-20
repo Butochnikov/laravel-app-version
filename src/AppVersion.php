@@ -1,10 +1,10 @@
 <?php
 
-namespace Butochnikov\LaravelAppVersion\Controllers;
+namespace Butochnikov\LaravelAppVersion;
 
 use Illuminate\Support\Facades\Config;
 
-class AppVersionController
+class AppVersion
 {
     public $ver;
 
@@ -53,6 +53,11 @@ class AppVersionController
         } else {
             return "{$this->getAppName()} {$this->ver}";
         }
+    }
+
+    public function getAppVersion()
+    {
+        return $this->printVersion();
     }
 
     public function getFullVersion()

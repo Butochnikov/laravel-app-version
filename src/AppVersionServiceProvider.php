@@ -13,6 +13,8 @@ class AppVersionServiceProvider extends ServiceProvider
 
     protected function registerConsoleCommands()
     {
+        $this->app->alias(AppVersion::class, 'app-version');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 \Butochnikov\LaravelAppVersion\Console\Commands\ApplicationVersion::class,
