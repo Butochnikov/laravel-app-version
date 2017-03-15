@@ -3,7 +3,7 @@
 namespace Butochnikov\LaravelAppVersion\Console\Commands;
 
 use Illuminate\Console\Command;
-use Butochnikov\LaravelAppVersion\AppVersionController;
+use Butochnikov\LaravelAppVersion\AppVersion;
 
 class ApplicationVersion extends Command
 {
@@ -12,7 +12,7 @@ class ApplicationVersion extends Command
 
     protected $description = 'Display application version';
 
-    public function handle(AppVersionController $ver)
+    public function handle(AppVersion $ver)
     {
         $options = $this->options();
 
