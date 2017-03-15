@@ -3,7 +3,7 @@
 namespace Butochnikov\LaravelAppVersion\Console\Commands;
 
 use Illuminate\Console\Command;
-use Butochnikov\LaravelAppVersion\Controllers\AppVersionController;
+use Butochnikov\LaravelAppVersion\AppVersionController;
 
 class ApplicationVersion extends Command
 {
